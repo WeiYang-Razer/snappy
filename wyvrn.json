@@ -1,0 +1,22 @@
+{
+  "name": "snappy",
+  "version": "1.2.2.0",
+  "schemaVersion": 2,
+  "kind": "StaticLib",
+  "description": "TODO: one-line description of snappy",
+  "dependencies": {},
+  "build": {
+    "system": "cmake",
+    "configs": [
+      "Debug",
+      "Release",
+      "RelWithDebInfo",
+      "MinSizeRel"
+    ],
+    "configure": [
+      "-DSNAPPY_BUILD_TESTS=OFF",
+      "-DSNAPPY_BUILD_BENCHMARKS=OFF"
+    ],
+    "installDir": "install"
+  }
+}
